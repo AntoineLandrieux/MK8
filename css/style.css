@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    --default-size: max(20px, 10vmin);
+}
+
+body {
+    background: url("/resources/img/mk.gif") repeat fixed;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#474541cc, #000000cc);
+}
+
+nav {
+    width: 100%;
+    background-color: #b31616;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: max(20px, 3vmin);
+    padding-bottom: max(20px, 3vmin);
+    border-radius: 10px;
+    background-color: #aa5757;
+    list-style-type: none;
+    transform: scale(0.8);
+    text-align: center;
+    transition: all .5s ease-in-out;
+    font-size: max(20px, 4vmin);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    transform: scale(1);
+    background-color: #b34646;
+    transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+}
+
+h1 {
+    cursor: pointer;
+    font-size: max(20px, 30vmin);
+    background: linear-gradient(#b31616, #aa5757);
+    background-clip: text;
+    font-weight: bold;
+    color: transparent;
+}
+
+main {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#000, #474541);
+}
+
+h2 {
+    padding: 10PX;
+    text-align: center;
+    color: #b31616;
+    font-size: var(--default-size);
+}
+
+pre,
+span {
+    font-size: calc(var(--default-size) / 2);
+    font-weight: bolder;
+}
+
+pre::before,
+span::before {
+    content: attr(emoji);
+    font-size: calc(var(--default-size) / 2);
+}
+
+#usr {
+    height: var(--default-size);
+    width: var(--default-size);
+}
+
+
+#participants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#participants a {
+    font-size: max(20px, 4vmin);
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #b31616;
+    text-align: center;
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+
+footer {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+a {
+    padding: 10px;
+    font-size: max(20px, 4vmin);
+}
