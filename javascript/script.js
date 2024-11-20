@@ -142,7 +142,7 @@ function get_home_page() {
 function get_tounois_page() {
     return `
 <h2>Prochains participants :</h2>
-<img src="../resources/img/image.png" alt="" srcset="">`;
+<img src="/MK8/resources/img/image.png" alt="" srcset="">`;
 }
 
 function get_participants_page() {
@@ -179,7 +179,7 @@ function get_participants_page() {
 function get_participant_page() {
     return `
 <h2>${user}</h2>
-<img id="usr" src="/resources/img/user.png" alt="user" />
+<img id="usr" src="/MK8/resources/img/user.png" alt="user" />
 <pre emoji="🎯">${users[user].desc}</pre>
 <span emoji="🏎️">${users[user].play}</span>
 <span emoji="🎢">${users[user].maps}</span>`;
