@@ -149,30 +149,30 @@ function get_participants_page() {
     return `
 <h2>Participants :</h2>
 <div id="participants">
-    <a href="/MK8/?user=Adrien">Adrien</a></a>
-    <a href="/MK8/?user=Anthony">Anthony</a>
-    <a href="/MK8/?user=Theo">Théo</a>
-    <a href="/MK8/?user=Kayhan">Kayhan</a>
-    <a href="/MK8/?user=Maxime">Maxime</a>
-    <a href="/MK8/?user=Noah">Noah</a>
-    <a href="/MK8/?user=Louis">Louis</a>
-    <a href="/MK8/?user=Sean">Sean</a>
-    <a href="/MK8/?user=Bastien">Bastien</a>
-    <a href="/MK8/?user=Enoha">Enoha</a>
-    <a href="/MK8/?user=Guilherme">Guilher</a>i>
-    <a href="/MK8/?user=Matiass">Matiass</a>
-    <a href="/MK8/?user=Max">Max</a>
-    <a href="/MK8/?user=Lucas">Lucas</a>
-    <a href="/MK8/?user=Antoine">Antoine</a>
-    <a href="/MK8/?user=Soan">Soan</a>
-    <a href="/MK8/?user=Zackary">Zackary</a>
-    <a href="/MK8/?user=Justin">Justin</a>
-    <a href="/MK8/?user=Kevin">Kevin</a>
-    <a href="/MK8/?user=Marius">Marius</a>
-    <a href="/MK8/?user=Nolan">Nolan</a>
-    <a href="/MK8/?user=Thibault">Thibault</a>
-    <a href="/MK8/?user=Mael08">Mael (08)</a>
-    <a href="/MK8/?user=TheoJ">Théo J</a>
+    <a href="/MK8?user=Adrien">Adrien</a></a>
+    <a href="/MK8?user=Anthony">Anthony</a>
+    <a href="/MK8?user=Theo">Théo</a>
+    <a href="/MK8?user=Kayhan">Kayhan</a>
+    <a href="/MK8?user=Maxime">Maxime</a>
+    <a href="/MK8?user=Noah">Noah</a>
+    <a href="/MK8?user=Louis">Louis</a>
+    <a href="/MK8?user=Sean">Sean</a>
+    <a href="/MK8?user=Bastien">Bastien</a>
+    <a href="/MK8?user=Enoha">Enoha</a>
+    <a href="/MK8?user=Guilherme">Guilher</a>i>
+    <a href="/MK8?user=Matiass">Matiass</a>
+    <a href="/MK8?user=Max">Max</a>
+    <a href="/MK8?user=Lucas">Lucas</a>
+    <a href="/MK8?user=Antoine">Antoine</a>
+    <a href="/MK8?user=Soan">Soan</a>
+    <a href="/MK8?user=Zackary">Zackary</a>
+    <a href="/MK8?user=Justin">Justin</a>
+    <a href="/MK8?user=Kevin">Kevin</a>
+    <a href="/MK8?user=Marius">Marius</a>
+    <a href="/MK8?user=Nolan">Nolan</a>
+    <a href="/MK8?user=Thibault">Thibault</a>
+    <a href="/MK8?user=Mael08">Mael (08)</a>
+    <a href="/MK8?user=TheoJ">Théo J</a>
 </div>`;
 }
 
@@ -198,8 +198,8 @@ window.onload = () => {
     });
 
     if (!user)
-        update(datas["TOURNOIS"]());
+        update(datas["HOME"]());
 
-    update(datas["HOME"]());
+    update(datas["PARTICIPANT"]());
 
 };
